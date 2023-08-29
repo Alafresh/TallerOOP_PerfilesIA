@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
@@ -5,13 +6,22 @@ using UnityEngine;
 
 public abstract class AIProfile
 {
+    protected abstract float viewDistance { get; }
+    protected abstract float waitForTurn { get; }
+    protected abstract List<Vector3> waypoints { get; }
     public abstract void ExecuteProfile();
-    public abstract void OnPlayerDetected();
+    public virtual void OnPlayerDetected() => Debug.Log("Player found");
     public abstract void DetectPlayer();
 }
 
 public class Guardia : AIProfile
 {
+    protected override float viewDistance => throw new System.NotImplementedException();
+
+    protected override float waitForTurn => throw new System.NotImplementedException();
+
+    protected override List<Vector3> waypoints => throw new System.NotImplementedException();
+
     public override void DetectPlayer()
     {
         throw new System.NotImplementedException();
@@ -24,12 +34,18 @@ public class Guardia : AIProfile
 
     public override void OnPlayerDetected()
     {
-        throw new System.NotImplementedException();
+        base.OnPlayerDetected();
     }
 }
 
 public class PatrullaCiclica: AIProfile
 {
+    protected override float viewDistance => throw new System.NotImplementedException();
+
+    protected override float waitForTurn => throw new System.NotImplementedException();
+
+    protected override List<Vector3> waypoints => throw new System.NotImplementedException();
+
     public override void DetectPlayer()
     {
         throw new System.NotImplementedException();
@@ -42,12 +58,18 @@ public class PatrullaCiclica: AIProfile
 
     public override void OnPlayerDetected()
     {
-        throw new System.NotImplementedException();
+        base.OnPlayerDetected();
     }
 }
 
 public class PatrullaPingPong : AIProfile
 {
+    protected override float viewDistance => throw new System.NotImplementedException();
+
+    protected override float waitForTurn => throw new System.NotImplementedException();
+
+    protected override List<Vector3> waypoints => throw new System.NotImplementedException();
+
     public override void DetectPlayer()
     {
         throw new System.NotImplementedException();
@@ -60,6 +82,6 @@ public class PatrullaPingPong : AIProfile
 
     public override void OnPlayerDetected()
     {
-        throw new System.NotImplementedException();
+        base.OnPlayerDetected();
     }
 }
