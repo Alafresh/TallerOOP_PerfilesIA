@@ -13,10 +13,10 @@ Para configurar el entorno de desarrollo y ejecutar el proyecto, sigue estos pas
 
 ## Conceptos de POO Aplicados
 
-- _Abstracción:_ Aquí radica en la capacidad de definir una estructura general (AIProfile) que encapsula características comunes y comportamientos esperados, pero que permite a las subclases (por ejemplo, Guardia, PatrullaCiclica, PatrullaPingPong) proporcionar detalles específicos. Esto facilita la creación de diferentes perfiles de IA al tiempo que mantiene una estructura generalizada.
-- *Herencia:* En el código, se utiliza la herencia para crear perfiles de inteligencia artificial (AI) específicos para cada tipo de personaje en el juego, como el guardia y las patrullas. Los perfiles heredan propiedades y métodos de una clase base AIProfile.
-- *Polimorfismo:* Se utiliza el polimorfismo al sobrescribir métodos en las clases derivadas, como ExecuteProfile(), OnPlayerDetected(), y DetectPlayer(). Cada perfil de AI implementa estos métodos de acuerdo con su comportamiento único.
-- *Encapsulamiento*: Los perfiles de IA mediante la definición de propiedades y métodos que controlan el acceso a los datos internos de cada perfil de IA.
+- **Abstracción:** Aquí radica en la capacidad de definir una estructura general (AIProfile) que encapsula características comunes y comportamientos esperados, pero que permite a las subclases (por ejemplo, Guardia, PatrullaCiclica, PatrullaPingPong) proporcionar detalles específicos. Esto facilita la creación de diferentes perfiles de IA al tiempo que mantiene una estructura generalizada.
+- **Herencia:** En el código, se utiliza la herencia para crear perfiles de inteligencia artificial (AI) específicos para cada tipo de personaje en el juego, como el guardia y las patrullas. Los perfiles heredan propiedades y métodos de una clase base AIProfile.
+- **Polimorfismo:** Se utiliza el polimorfismo al sobrescribir métodos en las clases derivadas, como ExecuteProfile(), OnPlayerDetected(), y DetectPlayer(). Cada perfil de AI implementa estos métodos de acuerdo con su comportamiento único.
+- **Encapsulamiento**: Los perfiles de IA mediante la definición de propiedades y métodos que controlan el acceso a los datos internos de cada perfil de IA.
 
 ## Miembros
 Juan Guillermo Caicedo (ID: 464690)
